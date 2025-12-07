@@ -1,0 +1,1 @@
+{"type":"http-01","url":"https://acme.zerossl.com/v2/DV90/chall/S2F-L955F4mNvicsvV9NGw","status":"processing","token":"gBJDSW0cekrccKFyRKcIMzTLngWP-lL-GJvR9g6Afvc","keyAuthorization":"gBJDSW0cekrccKFyRKcIMzTLngWP-lL-GJvR9g6Afvc.3lJLvDNZXJ1szQNv_LcCrhwxXDKesP0UClpb8lNaECM","identifier":{"type":"dns","value":"vpn.abherifintech.publicvm.com"}}

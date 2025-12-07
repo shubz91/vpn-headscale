@@ -1,0 +1,14 @@
+{
+	"status": "valid",
+	"contact": [
+		"mailto:ultimateshubz@gmail.com"
+	],
+	"termsOfServiceAgreed": true,
+	"externalAccountBinding": {
+		"protected": "eyJhbGciOiJIUzI1NiIsImtpZCI6InR1QmR4NmhhOFFPNWhKUmN4WVl5Q2ciLCJ1cmwiOiJodHRwczovL2FjbWUuemVyb3NzbC5jb20vdjIvRFY5MC9uZXdBY2NvdW50In0",
+		"payload": "eyJjcnYiOiJQLTI1NiIsImt0eSI6IkVDIiwieCI6Im5wTGhNLVpTdkdpNUZJSDRQd0Z2UnVsOW1rRkRnZ2syY3N3QXJfT3ctLU0iLCJ5IjoiQ1NsSGlWUlQwTVNHanVrQy1Ra2xxaW01WHkyMFI3WmNHWTg4OHhEMXFJTSJ9",
+		"signature": "_okHhDDQT0URXnqvWZ-kThXCVxQNEydhFq4DyNTGTPw"
+	},
+	"orders": "https://acme.zerossl.com/v2/DV90/account/tuBdx6ha8QO5hJRcxYYyCg/orders",
+	"location": "https://acme.zerossl.com/v2/DV90/account/tuBdx6ha8QO5hJRcxYYyCg"
+}

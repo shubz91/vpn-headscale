@@ -1,0 +1,76 @@
+############################################
+# Core
+############################################
+
+server_url: http://vpn.abherifintech.publicvm.com
+listen_addr: 0.0.0.0:8080
+
+############################################
+# Database (NEW FORMAT - REQUIRED)
+############################################
+
+database:
+  type: sqlite
+  sqlite:
+    path: /var/lib/headscale/headscale.db
+
+############################################
+# Logging
+############################################
+
+log:
+  level: info
+  format: text
+
+############################################
+# Keys
+############################################
+
+private_key_path: /var/lib/headscale/private.key
+
+noise:
+  private_key_path: /var/lib/headscale/noise_private.key
+
+############################################
+# IP Allocation (NEW FORMAT - REQUIRED)
+############################################
+
+prefixes:
+  v4: 100.64.0.0/10
+  v6: fd7a:115c:a1e0::/48
+
+############################################
+# DERP
+############################################
+
+derp:
+  auto_update_enabled: true
+  update_frequency: 24h
+
+  urls:
+    - https://controlplane.tailscale.com/derpmap/default
+
+  server:
+    enabled: false
+
+############################################
+# DNS
+############################################
+
+dns:
+  override_local_dns: true
+
+  nameservers:
+    global:
+      - 1.1.1.1
+      - 8.8.8.8
+
+  magic_dns: true
+  base_domain: ts.abherifintech.publicvm.com
+
+############################################
+# For Headplane
+############################################
+
+unix_socket: /var/run/headscale/headscale.sock
+unix_socket_permissions: "0770"
