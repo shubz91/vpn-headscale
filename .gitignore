@@ -1,1 +1,3 @@
-data/
+data/caddy/*
+data/headplane/*
+data/headscale/*
