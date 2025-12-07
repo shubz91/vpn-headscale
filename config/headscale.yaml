@@ -45,11 +45,9 @@ prefixes:
 
 derp:
   auto_update_enabled: true
-  update_frequency: 24h
-
   urls:
     - https://controlplane.tailscale.com/derpmap/default
-
+  paths: []
   server:
     enabled: false
 
