@@ -68,7 +68,7 @@ dns:
       - 8.8.8.8
 
   magic_dns: true
-  base_domain: ts.abherifintech.publicvm.com
+  base_domain: abherifintech.com
 
 ############################################
 # For Headplane
