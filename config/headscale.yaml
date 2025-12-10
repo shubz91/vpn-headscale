@@ -76,25 +76,23 @@ dns:
 
 oidc:
   enabled: true
-  issuer: "https://accounts.zoho.com"
+
+  # India region — change to .com if your account is global
+  issuer: "https://accounts.zoho.in"
+
   client_id: "${ZOHO_OIDC_CLIENT_ID}"
   client_secret: "${ZOHO_OIDC_CLIENT_SECRET}"
+
   redirect_uri: "https://vpn.abherifintech.publicvm.com/oidc/callback"
 
-  # Required scopes for Zoho
   scope:
     - "openid"
     - "email"
-    - "ZohoProfile.user.READ"
+    - "profile"
 
-  # Zoho OIDC endpoints
-  auth_url: "https://accounts.zoho.in/oauth/v2/auth"
-  token_url: "https://accounts.zoho.in/oauth/v2/token"
-  userinfo_url: "https://accounts.zoho.in/oauth/user/info"
-
-  # Optional
+  # Optional - restrict to your emails
   allowed_domains:
-    - "https://vpn.abherifintech.publicvm.com"
+    - "abherifintech.com"
 
 ############################################
 # For Headplane

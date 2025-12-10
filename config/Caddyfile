@@ -3,13 +3,11 @@ vpn.abherifintech.publicvm.com {
 
     header Strict-Transport-Security "max-age=31536000;"
 
-    # UI → Headplane
-    handle_path /admin* {
+    # Route admin UI to headplane (WITHOUT stripping /admin)
+    route /admin* {
         reverse_proxy http://headplane:3000
     }
 
-    # API → Headscale
-    handle {
-        reverse_proxy http://headscale:8080
-    }
+    # Everything else → headscale API
+    reverse_proxy http://headscale:8080
 }
