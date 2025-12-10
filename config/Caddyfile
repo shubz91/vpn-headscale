@@ -1,15 +1,15 @@
-# Headscale API (used as the login-server by tailscale clients)
 vpn.abherifintech.publicvm.com {
-    reverse_proxy headscale:8080
     tls ultimateshubz@gmail.com
+
     header Strict-Transport-Security "max-age=31536000;"
 
-    reverse_proxy /admin* headplane:3000
-}
+    # UI → Headplane
+    handle_path /admin* {
+        reverse_proxy http://headplane:3000
+    }
 
-# Headplane UI
-vpnui.abherifintech.publicvm.com {
-    reverse_proxy headplane:3000
-    tls ultimateshubz@gmail.com
-    header Strict-Transport-Security "max-age=31536000;"
+    # API → Headscale
+    handle {
+        reverse_proxy http://headscale:8080
+    }
 }
