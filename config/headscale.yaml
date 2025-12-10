@@ -71,6 +71,32 @@ dns:
   base_domain: abherifintech.com
 
 ############################################
+# FOR ZOHO LOGIN
+############################################
+
+oidc:
+  enabled: true
+  issuer: "https://accounts.zoho.com"
+  client_id: "${ZOHO_OIDC_CLIENT_ID}"
+  client_secret: "${ZOHO_OIDC_CLIENT_SECRET}"
+  redirect_uri: "https://vpn.abherifintech.publicvm.com/oidc/callback"
+
+  # Required scopes for Zoho
+  scope:
+    - "openid"
+    - "email"
+    - "ZohoProfile.user.READ"
+
+  # Zoho OIDC endpoints
+  auth_url: "https://accounts.zoho.in/oauth/v2/auth"
+  token_url: "https://accounts.zoho.in/oauth/v2/token"
+  userinfo_url: "https://accounts.zoho.in/oauth/user/info"
+
+  # Optional
+  allowed_domains:
+    - "https://vpn.abherifintech.publicvm.com"
+
+############################################
 # For Headplane
 ############################################
 
