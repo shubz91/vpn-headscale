@@ -33,6 +33,7 @@ services:
       me.tale.headplane.target: headscale
     ports:
       - '8080:8080'
+      - '9090:9090'
     volumes:
       # Notice how these are on the exact same path as the host for both
       # Headscale and Headplane! This is very important.
