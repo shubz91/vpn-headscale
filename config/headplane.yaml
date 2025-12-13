@@ -7,7 +7,7 @@ server:
   # The base URL for Headplane. Please keep in mind that this will be required
   # for Headscale to properly function going forward AND it should not include
   # the dashboard prefix (/admin) portion.
-  base_url: "http://vpn.abherifintech.publicvm.com/admin"
+  base_url: "http://vpn.abherifintech.com/admin"
 
   # The secret used to encode and decode web sessions (must be 32 characters)
   # You may also provide `cookie_secret_path` instead to read a value from disk.
@@ -75,7 +75,7 @@ headscale:
   # with Headscale if there are any issues with the configuration file.
   #
   # This is recommended to be true for production deployments to, however it
-  # may not work if you are using a version of Headscale that has configuration
+  # may not work if you are using a version of Headsc ale that has configuration
   # options unknown to Headplane.
   config_strict: true
 

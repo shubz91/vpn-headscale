@@ -1,10 +1,10 @@
 vpn.abherifintech.com {
     tls ultimateshubz@gmail.com
 
-    #log {
-    #    output file /var/log/caddy/access.log
-    #    format json
-    #}
+    log {
+        output file /var/log/caddy/access.log
+        format json
+    }
 
     header Strict-Transport-Security "max-age=31536000;"
 
