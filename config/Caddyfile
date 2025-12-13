@@ -1,15 +1,16 @@
-vpn.abherifintech.publicvm.com {
+vpn.abherifintech.com {
     tls ultimateshubz@gmail.com
 
-    log {
-        output file /var/log/caddy/access.log
-        format json
-    }
+    #log {
+    #    output file /var/log/caddy/access.log
+    #    format json
+    #}
 
     header Strict-Transport-Security "max-age=31536000;"
 
     # Route admin UI to headplane (WITHOUT stripping /admin)
     route /admin* {
+        uri strip_prefix /admin
         reverse_proxy http://headplane:3000
     }
 
