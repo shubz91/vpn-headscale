@@ -10,7 +10,6 @@ vpn.abherifintech.com {
 
     # Route admin UI to headplane (WITHOUT stripping /admin)
     route /admin* {
-        uri strip_prefix /admin
         reverse_proxy http://headplane:3000
     }
 
