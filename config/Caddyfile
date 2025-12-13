@@ -14,5 +14,8 @@ vpn.abherifintech.com {
     }
 
     # Everything else → headscale API
-    reverse_proxy http://headscale:8080
+    reverse_proxy http://headscale:8080 {
+        header_up X-Forwarded-Proto https
+        header_up X-Forwarded-Host {host}
+    }
 }
