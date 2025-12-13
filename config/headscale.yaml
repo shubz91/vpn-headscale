@@ -360,10 +360,10 @@ oidc:
   # Custom scopes can be configured as needed, be sure to always include the
   # required "openid" scope.
   scope: ["openid", "profile", "email"]
-  redirect_uri: "https://vpn.abherifintech.com/oidc/callback"
-  auth_url: "https://accounts.zoho.com/oauth/v2/auth"
-  token_url: "https://accounts.zoho.com/oauth/v2/token"
-  userinfo_url: "https://accounts.zoho.com/oauth/user/info"
+  #redirect_uri: "https://vpn.abherifintech.com/oidc/callback"
+  #auth_url: "https://accounts.zoho.com/oauth/v2/auth"
+  #token_url: "https://accounts.zoho.com/oauth/v2/token"
+  #userinfo_url: "https://accounts.zoho.com/oauth/user/info"
   # Provide custom key/value pairs which get sent to the identity provider's
   # authorization endpoint.
   # extra_params:
