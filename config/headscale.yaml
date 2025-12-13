@@ -10,7 +10,7 @@
 #
 # https://myheadscale.example.com:443
 #
-server_url: http://vpn.abherifintech.com:8080
+server_url: https://vpn.abherifintech.com
 
 # Address to listen to / bind to on the server
 #
