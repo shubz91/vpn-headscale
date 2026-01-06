@@ -332,7 +332,7 @@ oidc:
   only_start_if_oidc_is_available: true
 
   # OpenID Connect Issuer URL from the identity provider
-  issuer: "https://accounts.zoho.com"
+  issuer: "https://accounts.zoho.in"
 
   # Client ID from the identity provider
   client_id: "1000.DORRS1E7BUYKE7IQXTIUZJI4KAC52J"
